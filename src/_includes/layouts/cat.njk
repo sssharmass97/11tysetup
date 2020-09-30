@@ -1,0 +1,130 @@
+{% extends "base.njk" %}
+
+{% block categoryContent %}
+
+<!--MAIN SECTION CATEGORYPAGE-->
+<div id="content" class="vlog-site-content">
+    <div class="vlog-section  ">
+        <div class="container">
+            <div class="vlog-content">
+                <div class="row row-eq-height">
+                    <div class="vlog-module module-posts col-lg-12 col-md-12 col-sm-12 " id="vlog-module-0-0"
+                        data-col="12">
+                        <div class="vlog-mod-head">
+                            <div class="vlog-mod-title">
+                                <h4>{{ tag }}</h4>
+                            </div>
+                        </div>
+                        <div class="row vlog-posts row-eq-height">
+                            <!--ARTICLE START--> {% for video in collections[ tag ] %}
+                            <article
+                                class="vlog-lay-c vlog-post col-lg-6 col-md-6 col-sm-6 col-xs-12 post-3364 post type-post status-publish format-video has-post-thumbnail hentry category-print-on-demand post_format-post-format-video">
+                                <div class="entry-image">
+                                    <a href="{{ video.url }}" title="Placeit: T-Shirt Design" class="" data-id="3364">
+                                        <img width="366" height="205" src="{{ video.data.thumbnail }}"
+                                            class="attachment-vlog-lay-b size-vlog-lay-b wp-post-image" alt=""
+                                            loading="lazy">
+                                        <div class="vlog-labels medium"><span class="vlog-format-label">Video</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="entry-header">
+                                    <span class="entry-category"><a href="{{ video.permalink }}"
+                                            class="vlog-cat-25">{{ tag }}</a></span>
+                                    <h2 class="entry-title h2"><a href="{{ video.url }}">{{ video.data.videoTitle }}</a>
+                                    </h2>
+                                </div>
+                                <div class="entry-meta">
+                                    <div class="meta-item meta-author"><span class="vcard author"><span class="fn"><a
+                                                    href="/"
+                                                    class="meta-icon">{{ video.data.authorName }}</a></span></span>
+                                    </div>
+                                    <div class="meta-item meta-date"><span
+                                            class="updated meta-icon">{{ video.data.publishedDate }}</span></div>
+                                </div>
+                                <div class="entry-content">
+                                </div>
+                            </article>
+                            <!--ARTICLE END-->
+                            {% endfor %}
+                        </div>
+
+                        <nav class="vlog-pagination vlog-load-more">
+                            <a href="https://greggottfried.com/print-on-demand/page/2/">Load More</a>
+                            <div class="vlog-loader">
+
+
+                        </div>
+                        </nav>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="vlog-sidebar vlog-sidebar-right">
+
+                <div id="text-4" class="widget widget_text">
+                    <h4 class="widget-title h5"><span>Trusted Resources</span></h4>
+                    <div class="textwidget">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis.
+                            Integer accumsan fringilla tortor et porta..</p>
+                        <p><a href="#" class="vlog-button">View Resources</a></p>
+                    </div>
+                </div>
+                <div id="text-8" class="widget widget_text">
+                    <h4 class="widget-title h5"><span>Print On-Demand Startup Checklist</span></h4>
+                    <div class="textwidget">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis.
+                            Integer accumsan fringilla tortor et porta. Aenean laoreet rhoncus justo sit amet hendrerit.</p>
+                        <p><a class="vlog-button" href="#">Download
+                                Free Checklist</a></p>
+                    </div>
+                </div>
+                <div id="text-11" class="widget widget_text">
+                    <h4 class="widget-title h5"><span>T-Shirt Design Tool</span></h4>
+                    <div class="textwidget">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis.
+                             Integer accumsan fringilla tortor et porta. Aenean laoreet rhoncus justo sit amet hendrerit.</p>
+                        <p><a class="vlog-button" href="#" target="_blank"
+                                rel="noopener noreferrer">T-Shirt Design Tool</a></p>
+                    </div>
+                </div>
+                <div id="nav_menu-3" class="widget widget_nav_menu">
+                    <h4 class="widget-title h5"><span>Menu</span></h4>
+                    <div class="menu-main-container">
+                        <ul id="menu-main-3" class="menu">
+                            <li
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2757">
+                                <a href="/">Home</a></li>
+                            <li
+                                class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2118 current_page_item menu-item-2129">
+                                <a href="/tags/cat1/" aria-current="page">cat1</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130"><a
+                                    href="/tags/cat2/">Cat2</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131"><a
+                                    href="/tags/cat3/">Cat3</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2096"><a
+                                    href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="text-5" class="widget widget_text">
+                    <h4 class="widget-title h5"><span>Legal Information</span></h4>
+                    <div class="textwidget">
+                        <p><span class="color_14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis. 
+                            Integer accumsan fringilla tortor et porta. Aenean laoreet rhoncus justo sit amet hendrerit.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock categoryContent %}

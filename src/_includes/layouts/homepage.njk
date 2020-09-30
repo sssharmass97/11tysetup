@@ -1,0 +1,40 @@
+{% extends "base.njk" %}
+
+{% block homepagecontent %}
+<!--MAIN SECTION HOMEPAGE-->
+<div id="content" class="vlog-site-content">
+	<div class="vlog-featured-3 vlog-featured-custom">
+		<div class="vlog-featured-item">
+			<div class="vlog-cover-bg">
+				<div class="vlog-cover" style="opacity: 1;"><img width="1500" height="500"
+						src="{{ heroBackgroundImage }}" class="attachment-vlog-cover-full size-vlog-cover-full" alt=""
+						loading="lazy">
+				</div>
+			</div>
+			<div class="vlog-featured-info-3 vlog-featured-info-custom vlog-active-hover vlog-f-hide container">
+				<div class="entry-header">
+					<h1><span style="color: #333333;">{{ heroHeadline1 }}</span></h1>
+					<h1><span style="color: #333333;">{{ heroHeadline2 }}</span></h1>
+					<h1><span style="color: #333333;">{{ heroHeadline3 }}</span></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="vlog-section vlog-no-sid  ">
+		<div class="container">
+			<div class="vlog-content">
+				<div class="row row-eq-height">
+					<div class="vlog-module module-text col-lg-12 col-md-12 col-sm-12 col-xs-12 " id="vlog-module-0-0">
+						<div class="vlog-txt-module">
+							<div class="text-center" style="margin: 0 auto; max-width: 768px;">
+								<h2>{{ homeInfoTitle }}</h2>
+								<p style="margin-bottom: 40px;">{{ homeInfoDesc }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock homepagecontent %}

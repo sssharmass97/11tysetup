@@ -1,0 +1,203 @@
+{% extends "base.njk" %}
+
+{% block videoPageContent %}
+
+<!--MAIN SECTION homepage-->
+<div id="content" class="vlog-site-content">
+    <article id="post-3356"
+        class="post-3356 post type-post status-publish format-video has-post-thumbnail hentry category-print-on-demand post_format-post-format-video">
+        <div class="vlog-featured vlog-featured-1 vlog-single-cover  ">
+            <div class="vlog-featured-item">
+                <div class="vlog-cover-bg video">
+                    <a class="vlog-cover" href="javascript: void(0);" data-action="video" data-id="3356"
+                        style="opacity: 1;">
+                        <img width="888" height="500"
+                            src="./videopage2_files/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-888x500.jpeg"
+                            class="attachment-vlog-cover-full size-vlog-cover-full wp-post-image"
+                            alt="Print On Demand Tutorial For Beginners - Teespring, RedBubble, Merch By Amazon"
+                            loading="lazy"
+                            srcset="https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-888x500.jpeg 888w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-300x169.jpeg 300w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-1024x577.jpeg 1024w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-768x432.jpeg 768w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-1536x865.jpeg 1536w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-1104x621.jpeg 1104w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-366x205.jpeg 366w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-534x300.jpeg 534w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-165x92.jpeg 165w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-249x140.jpeg 249w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-232x130.jpeg 232w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-344x193.jpeg 344w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-760x428.jpeg 760w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-600x338.jpeg 600w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover-264x149.jpeg 264w, https://greggottfried.com/wp-content/uploads/2020/05/Print-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover.jpeg 2048w"
+                            sizes="(max-width: 888px) 100vw, 888px"> <span
+                            class="vlog-format-action large" "=""><i class=" fa fa-play"></i></span> </a>
+                    <div class="vlog-format-content video">
+                    </div>
+                    {% set allVideosByTag = collections[ tags ] %}
+                    {% set previousVideo = allVideosByTag | getPreviousCollectionItem(page) %}
+                    {% set nextVideo = allVideosByTag | getNextCollectionItem(page) %}
+                    <nav class="vlog-prev-next-cover-nav vlog-prev-next-nav">
+                        <div class="vlog-prev-link">
+                            <a href="{{ previousVideo.url }}">
+                                
+                                {% if previousVideo %}
+                                <span class="vlog-pn-ico"><i
+                                        class="fa fa fa-chevron-left"></i><span>Previous</span></span>
+                                <span class="vlog-pn-link">{{ previousVideo.data.videoTitle }}</span>{% endif %}
+                            </a>
+                        </div>
+                        <div class="vlog-next-link">
+                            <a href="{{ nextVideo.url }}">
+                                {% if nextVideo %}
+                                <span class="vlog-pn-ico"><span>Next</span><i class="fa fa fa-chevron-right"></i></span>
+                                <span class="vlog-pn-link">{{ nextVideo.data.videoTitle }}</span>
+                                {% endif %}
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="vlog-featured-info container vlog-cover-hover-mode vlog-f-hide">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="vlog-featured-info-bg vlog-highlight">
+                                <div class="entry-header">
+                                    <span class="entry-category">
+                                        {% set videoData = allVideosByTag %}
+                                    <a href="/{{ tags }}/" class="vlog-cat-25">{{ tags }}</a></span>
+                                    <h1 class="entry-title">{{ videoTitle }}</h1>
+                                </div>
+                                <div class="entry-actions vlog-vcenter-actions">
+                                    <a class="action-item watch-later"
+                                        href="https://greggottfried.com/print-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon/void(0);"
+                                        data-id="3356" data-action="add"><i class="fv fv-watch-later"></i> <span
+                                            class="add">Watch Later</span><span
+                                            class="remove hidden">Remove</span></a><a class="action-item cinema-mode"
+                                        href="https://greggottfried.com/print-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon/void(0);"
+                                        data-id="3356"><i class="fv fv-fullscreen"></i> Cinema Mode</a> </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vlog-format-inplay vlog-bg">
+                    <div class="container">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="vlog-section ">
+            <div class="container">
+                <div class="vlog-content vlog-single-content">
+                    <div class="entry-content-single">
+                        <div class="vlog-share-single">
+                            <div class="meks_ess rectangle solid"><a href="javascript:void(0);"
+                                    class="meks_ess-item socicon-facebook"
+                                    data-url="http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgreggottfried.com%2Fprint-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon%2F&amp;t=Print%20On%20Demand%20Tutorial%20For%20Beginners%20%E2%80%93%20Teespring%2C%20RedBubble%2C%20Merch%20By%20Amazon"><span>Facebook</span></a><a
+                                    href="javascript:void(0);" class="meks_ess-item socicon-twitter"
+                                    data-url="http://twitter.com/intent/tweet?url=https%3A%2F%2Fgreggottfried.com%2Fprint-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon%2F&amp;text=Print%20On%20Demand%20Tutorial%20For%20Beginners%20%E2%80%93%20Teespring%2C%20RedBubble%2C%20Merch%20By%20Amazon"><span>Twitter</span></a><a
+                                    href="javascript:void(0);" class="meks_ess-item socicon-reddit"
+                                    data-url="http://www.reddit.com/submit?url=https%3A%2F%2Fgreggottfried.com%2Fprint-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon%2F&amp;title=Print%20On%20Demand%20Tutorial%20For%20Beginners%20%E2%80%93%20Teespring%2C%20RedBubble%2C%20Merch%20By%20Amazon"><span>Reddit</span></a><a
+                                    href="javascript:void(0);" class="meks_ess-item socicon-pinterest"
+                                    data-url="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fgreggottfried.com%2Fprint-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon%2F&amp;media=https%3A%2F%2Fgreggottfried.com%2Fwp-content%2Fuploads%2F2020%2F05%2FPrint-On-Demand-Tutorial-For-Beginners-Teespring-RedBubble-Merch-By-Amazon-cover.jpeg&amp;description=Print%20On%20Demand%20Tutorial%20For%20Beginners%20%E2%80%93%20Teespring%2C%20RedBubble%2C%20Merch%20By%20Amazon"><span>Pinterest</span></a><a
+                                    href="mailto:?subject=Print%20On%20Demand%20Tutorial%20For%20Beginners%20%E2%80%93%20Teespring%2C%20RedBubble%2C%20Merch%20By%20Amazon&amp;body=https%3A%2F%2Fgreggottfried.com%2Fprint-on-demand-tutorial-for-beginners-teespring-redbubble-merch-by-amazon%2F"
+                                    class="socicon-mail prevent-share-popup "><span>Email</span></a></div>
+                        </div>
+                    </div>
+                    <div id="vlog-related" class="vlog-related-wrapper">
+                        <div class="row">
+                            <div class="vlog-module module-posts col-lg-12">
+
+                                <div class="vlog-mod-head">
+                                    <div class="vlog-mod-title">
+                                        <h4>You may also like</h4>
+                                    </div>
+                                </div>
+                                <div class="row vlog-posts row-eq-height">
+                                    <!--ARTICLE START-->{% for video in allVideosByTag %}
+                                    <article
+                                        class="vlog-lay-e vlog-post col-lg-4 col-sm-4 col-md-4 col-xs-12 post-3329 post type-post status-publish format-video has-post-thumbnail hentry category-print-on-demand post_format-post-format-video">
+                                        <div class="entry-image">
+                                            <a href="https://greggottfried.com/shopify-vs-teespring-which-one-should-you-use/"
+                                                title="Shopify vs. Teespring – Which One Should You Use?" class=""
+                                                data-id="3329">
+                                                <img width="232" height="130"
+                                                    src="{{ video.data.thumbnail }}"
+                                                    class="attachment-vlog-lay-e size-vlog-lay-e wp-post-image" alt=""
+                                                    loading="lazy"
+                                                    >
+                                                <div class="vlog-labels small"><span
+                                                        class="vlog-format-label">Video</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="entry-header">
+                                            <span class="entry-category"><a
+                                                    href="https://greggottfried.com/category/print-on-demand/"
+                                                    class="vlog-cat-25">{{ category }}</a></span>
+
+                                            <h2 class="entry-title h5"><a
+                                                    href="https://greggottfried.com/shopify-vs-teespring-which-one-should-you-use/">{{ video.data.videoTitle }}</a></h2>
+                                        </div>
+                                        <div class="entry-meta">
+                                            <div class="meta-item meta-views">51 views</div>
+                                            <div class="meta-item meta-rtime">1 min read</div>
+                                        </div>
+                                    </article>
+                                    <!--ARTICLE START--> {% endfor %}
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vlog-sidebar vlog-sidebar-right">
+                    <div id="text-7" class="widget widget_text">
+                        <h4 class="widget-title h5"><span>Trusted Resources</span></h4>
+                        <div class="textwidget">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis. Integer accumsan fringilla tortor et porta..</p>
+                            <p><a class="vlog-button" href="#">View Resources</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="text-9" class="widget widget_text">
+                        <h4 class="widget-title h5"><span>Print On-Demand Startup Checklist</span></h4>
+                        <div class="textwidget">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, 
+                                ultrices leo a, aliquet turpis. Integer accumsan fringilla tortor et porta..!</p>
+                            <p><a class="vlog-button" href="#">Download
+                                    Free
+                                    Checklist</a></p>
+                        </div>
+                    </div>
+                    <div id="text-10" class="widget widget_text">
+                        <h4 class="widget-title h5"><span>T-Shirt Design Tool</span></h4>
+                        <div class="textwidget">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at tortor ultricies, ultrices leo a, aliquet turpis. Integer accumsan fringilla tortor et porta..</p>
+                            <p><a class="vlog-button" href="#" 
+                                    rel="noopener noreferrer">T-Shirt Design Tool</a></p>
+                        </div>
+                    </div>
+                    <div id="nav_menu-4" class="widget widget_nav_menu">
+                        <h4 class="widget-title h5"><span>Menu</span></h4>
+                        <div class="menu-main-container">
+                            <ul id="menu-main-3" class="menu">
+                                <li
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2757">
+                                    <a href="/">Home</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2129">
+                                    <a href="/tags/cat1/">Cat1</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2130">
+                                    <a href="/tags/cat2/">cat2</a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2131">
+                                    <a href="/tags/cat3/">Cat3</a></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2096">
+                                    <a href="#">Resources</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="text-6" class="widget widget_text">
+                        <h4 class="widget-title h5"><span>Legal Information</span></h4>
+                        <div class="textwidget">
+                            <p><span class="color_14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at 
+                                tortor ultricies, ultrices leo a, aliquet turpis. Integer accumsan fringilla tortor et porta.
+                                 Aenean laoreet rhoncus justo sit amet hendrerit. Proin dignissim mauris in odio lobortis 
+                                 sollicitudin. In mattis, 
+                                dolor quis suscipit molestie, magna quam bibendum est, vitae tempor risus diam sit amet tellus.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+{% endblock videoPageContent %}
